@@ -1,0 +1,81 @@
+@@import "";
+
+/* regole generiche di pagina */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* regole header intestazione */
+
+header {
+  /* debug */
+  height: 300px;
+  background-color: pink;
+  position: relative;
+}
+
+nav {
+  display: inline-block;
+  /* debug */
+  height: 100px;
+  width: 40%;
+  background-color: violet;
+  margin: 10px 5%;
+}
+
+nav.right-side {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  /* debug */
+  margin-right: 10px;
+  margin-left: 10%;
+}
+
+
+/* regole main corpo centrale */
+
+main {
+  /* debug */
+  height: 700px;
+  background-color: green;
+}
+
+.banner {
+  margin: 20px 0;
+  /* debug */
+  height: 100px;
+  background-color: blue;
+}
+
+.row {
+  margin: 20px 5%;
+  /* debug */
+  height: 250px;
+  background-color: lightblue;
+}
+
+.row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.cell {
+  float: left;
+  margin: 20px;
+  width: 30%;
+  /* debug */
+  height: 180px;
+  background-color: purple;
+}
+
+/* regole footer */
+footer {
+  margin-top: 40px;
+  /*  debug */
+    height: 120px;
+    background-color: red;
+}
