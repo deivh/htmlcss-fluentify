@@ -8,6 +8,14 @@
   box-sizing: border-box;
 }
 
+/* regole ricorrenti di pagina */
+.cell-fr , .cell-sr {
+  float: left;
+  margin: 20px;
+  text-align: center;
+}
+
+
 /* regole header intestazione */
 
 body {
@@ -77,7 +85,7 @@ button.login {
 }
 
 button.cta {
-background-color: rgba(0, 204, 0, 0.75);
+  background-color: rgba(0, 204, 0, 0.75);
 }
 
 .page-title {
@@ -101,7 +109,8 @@ main {
  /* regole banner */
 
 .banner {
-  height: 10%;
+  position: relative;
+  height: 150px;
   background-color: #ccc;
 }
 
@@ -110,7 +119,10 @@ main {
  }
 
 .banner div {
-  padding-top: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%)
 }
 
 /* regole prima row */
@@ -127,10 +139,7 @@ main {
 }
 
 .cell-fr {
-  float: left;
-  margin: 20px ;
   width: 30%;
-  text-align: center;
 }
 .cell-fr img{
   width:auto;
@@ -161,22 +170,56 @@ main {
 .horizontal-rule {
   width:90%;
   margin: auto;
-  color: grey;
 }
 /* regole seconda row */
 
 .cell-sr {
-  float: left;
   width: 40%;
 }
+
 .cell-sr img {
   height: 500px;
   width: auto;
 }
+
+.cell-sr h2 {
+  font-size: 50px;
+  margin: 20px 0;
+}
+
+.cell-sr p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
 /* regole footer */
 footer {
+  position: relative;
+  height: 120px;
   margin-top: 40px;
-  /*  debug */
-    height: 120px;
-    background-color: grey;
+  background-color: #ccc;
+}
+
+footer h3 {
+  display: inline-block;
+  font-size: 35px;
+}
+
+.cell-tr-l {
+  float: left;
+  vertical-align: middle;
+}
+
+.cell-tr-r {
+  float: right;
+}
+
+.cell-tr-l , .cell-tr-r {
+  padding: 30px 5px;
+}
+
+footer .help {
+  position: absolute;
+  bottom: 10px;
+  right: 10%;
 }
