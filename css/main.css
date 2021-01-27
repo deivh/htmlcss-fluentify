@@ -1,6 +1,7 @@
-@@import "";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 /* regole generiche di pagina */
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +11,12 @@
 /* regole header intestazione */
 
 body {
-  font-style: 'Roboto' sans-serif;
+  font-style: 'Roboto', sans-serif;
+}
+
+header nav img {
+  vertical-align: middle;
+  padding-right:20px;
 }
 
 header {
@@ -21,14 +27,14 @@ header {
   background-position: right bottom;
   height: 400px;
   position: relative;
-  font-size: 20px;
+  font-size: 15px;
   color: white;
 }
 
 nav {
   display: inline-block;
   height: 10%;
-  margin: 20px 0 0 10%;
+  margin: 20px 0 0 5%;
 }
 
 nav ul {
@@ -39,6 +45,7 @@ nav ul {
 
 nav ul li {
   display: inline-block;
+  padding: 5px;
 }
 
 nav ul li a , nav ul li a:visited , .right-side a{
@@ -48,11 +55,11 @@ nav ul li a , nav ul li a:visited , .right-side a{
 
 nav ul li a:hover {
   text-shadow: 2px 1px black;
+  font-weight: bold;
 }
 
 nav.right-side {
-
-  line-height: 65px;
+  line-height: 40px;
   position: absolute;
   right: 30px;
 
@@ -76,23 +83,28 @@ background-color: rgba(102, 255, 51, 0.75);
 /* regole main corpo centrale */
 
 main {
-  /* debug */
   height: 700px;
-  background-color: green;
 }
+ /* regole banner */
 
 .banner {
-  margin: 20px 0;
-  /* debug */
-  height: 100px;
-  background-color: blue;
+  height: 10%;
+  background-color: #ccc;
 }
+
+ h3 , p {
+   text-align: center;
+ }
+
+.banner div {
+  padding-top: 10px;
+}
+
+/* regole row */
+
 
 .row {
   margin: 20px 5%;
-  /* debug */
-  height: 250px;
-  background-color: lightblue;
 }
 
 .row::after {
@@ -103,17 +115,32 @@ main {
 
 .cell {
   float: left;
-  margin: 20px;
+  margin: 20px ;
   width: 30%;
-  /* debug */
-  height: 180px;
-  background-color: purple;
+  text-align: center;
+}
+.cell img{
+  width:auto;
+  height: 150px;;
+}
+ 
+.underline {
+  margin: 10px;
+  color: lightgrey;
 }
 
+.cell h4 {
+  font-size: 20px;
+  color: #00e600;
+}
+
+.cell p {
+  color: grey;
+}
 /* regole footer */
 footer {
   margin-top: 40px;
   /*  debug */
     height: 120px;
-    background-color: red;
+    background-color: grey;
 }
