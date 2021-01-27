@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /* regole generiche di pagina */
 
@@ -11,7 +11,7 @@
 /* regole header intestazione */
 
 body {
-  font-style: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 header nav img {
@@ -77,7 +77,20 @@ button.login {
 }
 
 button.cta {
-background-color: rgba(102, 255, 51, 0.75);
+background-color: rgba(0, 204, 0, 0.75);
+}
+
+.page-title {
+  width:40%;
+  position: absolute;
+  bottom: 20%;
+  left: 5%;
+  margin: 0 0 30px 20px;
+}
+h1 {
+  margin-bottom: 20px;
+  font-size: 40px;
+  text-shadow: 1px 1px black;
 }
 
 /* regole main corpo centrale */
@@ -100,7 +113,7 @@ main {
   padding-top: 10px;
 }
 
-/* regole row */
+/* regole prima row */
 
 
 .row {
@@ -113,29 +126,52 @@ main {
   clear: both;
 }
 
-.cell {
+.cell-fr {
   float: left;
   margin: 20px ;
   width: 30%;
   text-align: center;
 }
-.cell img{
+.cell-fr img{
   width:auto;
-  height: 150px;;
+  height: 200px;;
 }
- 
+
 .underline {
   margin: 10px;
   color: lightgrey;
 }
 
-.cell h4 {
+.cell-fr h4 {
   font-size: 20px;
   color: #00e600;
 }
 
-.cell p {
+.cell-fr p {
   color: grey;
+}
+
+/* .underline-cont {
+  width: 10%;
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+} */
+
+.horizontal-rule {
+  width:90%;
+  margin: auto;
+  color: grey;
+}
+/* regole seconda row */
+
+.cell-sr {
+  float: left;
+  width: 40%;
+}
+.cell-sr img {
+  height: 500px;
+  width: auto;
 }
 /* regole footer */
 footer {
